@@ -24,15 +24,13 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="botao_AcessoDireitor" linkSize="1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
               <Component id="botao_AcessoGerente" linkSize="1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="botao_AcessoFuncionario" linkSize="1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="14" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
-          <Component id="Label_SistemaFrequencia" alignment="1" max="32767" attributes="0"/>
+          <Component id="Label_SistemaFrequencia" alignment="1" pref="477" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -43,7 +41,6 @@
               <EmptySpace pref="89" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="botao_AcessoGerente" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="botao_AcessoDireitor" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="botao_AcessoFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
@@ -61,17 +58,6 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botao_AcessoGerenteActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="botao_AcessoDireitor">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/sistemafrequencia/icons/icons8-Administrador Masculino-48.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Diretor"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botao_AcessoDireitorActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="botao_AcessoFuncionario">

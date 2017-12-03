@@ -28,7 +28,6 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         botao_AcessoGerente = new javax.swing.JButton();
-        botao_AcessoDireitor = new javax.swing.JButton();
         botao_AcessoFuncionario = new javax.swing.JButton();
         Label_SistemaFrequencia = new javax.swing.JLabel();
 
@@ -39,14 +38,6 @@ public class Login extends javax.swing.JFrame {
         botao_AcessoGerente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao_AcessoGerenteActionPerformed(evt);
-            }
-        });
-
-        botao_AcessoDireitor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sistemafrequencia/icons/icons8-Administrador Masculino-48.png"))); // NOI18N
-        botao_AcessoDireitor.setText("Diretor");
-        botao_AcessoDireitor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao_AcessoDireitorActionPerformed(evt);
             }
         });
 
@@ -67,17 +58,15 @@ public class Login extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(botao_AcessoDireitor)
-                .addGap(18, 18, 18)
+                .addGap(93, 93, 93)
                 .addComponent(botao_AcessoGerente)
                 .addGap(18, 18, 18)
                 .addComponent(botao_AcessoFuncionario)
-                .addContainerGap(14, Short.MAX_VALUE))
-            .addComponent(Label_SistemaFrequencia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(Label_SistemaFrequencia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 477, Short.MAX_VALUE)
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {botao_AcessoDireitor, botao_AcessoFuncionario, botao_AcessoGerente});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {botao_AcessoFuncionario, botao_AcessoGerente});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -87,7 +76,6 @@ public class Login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botao_AcessoGerente)
-                    .addComponent(botao_AcessoDireitor)
                     .addComponent(botao_AcessoFuncionario))
                 .addGap(129, 129, 129))
         );
@@ -96,7 +84,9 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botao_AcessoGerenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao_AcessoGerenteActionPerformed
-        // TODO add your handling code here:
+        MainWindow janelaPrincipal = new MainWindow();
+        janelaPrincipal.setVisible(true);
+        dispose();
     }//GEN-LAST:event_botao_AcessoGerenteActionPerformed
 
     private void botao_AcessoFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao_AcessoFuncionarioActionPerformed
@@ -104,10 +94,6 @@ public class Login extends javax.swing.JFrame {
         janelaPrincipal.setVisible(true);
         dispose();
     }//GEN-LAST:event_botao_AcessoFuncionarioActionPerformed
-
-    private void botao_AcessoDireitorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao_AcessoDireitorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao_AcessoDireitorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -144,7 +130,6 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Label_SistemaFrequencia;
-    private javax.swing.JButton botao_AcessoDireitor;
     private javax.swing.JButton botao_AcessoFuncionario;
     private javax.swing.JButton botao_AcessoGerente;
     // End of variables declaration//GEN-END:variables

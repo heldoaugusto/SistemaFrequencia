@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  *
  * @author asus
  */
-public class ConectionFactory {
+public class ConnectionFactory {
     
     private static final String DRIVER = "com.mysql.jdbc.Driver";
     private static final String URL = "jdbc:mysql://localhost:3306/dbsistemafrequencia";
@@ -40,7 +40,7 @@ public class ConectionFactory {
             try {
                 conection.close();
             } catch (SQLException ex) {
-                Logger.getLogger(ConectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
@@ -55,7 +55,7 @@ public class ConectionFactory {
             }
                 
         } catch (SQLException ex) {
-            Logger.getLogger(ConectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
@@ -69,7 +69,7 @@ public class ConectionFactory {
             }
                 
         } catch (SQLException ex) {
-            Logger.getLogger(ConectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }
