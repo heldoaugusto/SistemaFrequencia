@@ -5,6 +5,6 @@ package model;
  *
  * @author asus
  */
-public class Funcionario extends Pessoa{
+public class Funcionario{
     
 }
